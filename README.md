@@ -49,58 +49,59 @@ CREATE TABLE retail_sales
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
 
 ```sql
-WHERE transactions_id is null
-or
+WHERE transactions_id is Null
+OR
 sale_date is NUll 
-or 
-sale_time is null
-or 
-customer_id is null
-or 
-gender is null
-or 
-age is null
-or 
-category is null
-or
-quantiy is null
-or
-price_per_unit is null
-or
-cogs is null
-or
-total_sale is null
+OR
+sale_time is Null
+OR
+customer_id is Null
+OR 
+gender is Null
+OR 
+age is Null
+OR
+category is Null
+OR
+quantiy is Null
+OR
+price_per_unit is Null
+OR
+cogs is Null
+OR
+total_sale is Null
 
 
 ----delete null values---
 DELETE From retail_sales
-WHERE transactions_id is null
-or
+WHERE transactions_id is Null
+OR
 sale_date is NUll 
-or 
-sale_time is null
-or 
-customer_id is null
-or 
-gender is null
-or 
-age is null
-or 
-category is null
-or
-quantiy is null
-or
-price_per_unit is null
-or
-cogs is null
-or
-total_sale is null
+OR
+sale_time is Null
+OR
+customer_id is Null
+OR
+gender is Null
+OR
+age is Null
+OR
+category is Null
+OR
+quantiy is Null
+OR
+price_per_unit is Null
+OR
+cogs is Null
+OR
+total_sale is Null
 
 SELECT COUNT(*) AS total_sale From retail_sales
 
 --how many unique customers we have?--
 
 SELECT COUNT(distinct customer_id) AS total_sale From retail_sales
+
 
 SELECT distinct category From retail_sales
 
